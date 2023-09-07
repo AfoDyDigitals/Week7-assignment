@@ -18,3 +18,5 @@ makeSound() {
     console.log(`color: ${this.color}`);
 }
 }
+const dog = new Dog("mammal", "bark", "black");
+
