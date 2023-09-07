@@ -8,3 +8,13 @@ class Animal {
     }
 }
 
+class Dog extends Animal {
+    constructor(species, sound, color){
+        super(species, sound);
+        this.color = color;
+    }
+makeSound() {
+    super.makeSound();
+    console.log(`color: ${this.color}`);
+}
+}
