@@ -4,7 +4,8 @@ class Animal {
         this.sound = sound;
     }
     makeSound() {
-        console.log(`sound:${this.sound}`);
+        console.log(`The ${this.species} ${this.sound}s`);
+        //The dog barks
     }
 }
 
@@ -15,8 +16,9 @@ class Dog extends Animal {
     }
 makeSound() {
     super.makeSound();
-    console.log(`color: ${this.color}`);
+    console.log(`The ${this.color} dog ${this.sound}s`);
 }
 }
-const dog = new Dog("mammal", "bark", "black");
-
+const dog = new Dog("Dog", "bark", "black");
+dog.makeSound();
+//The black dog barks
